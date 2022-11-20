@@ -5,9 +5,9 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import postRoutes from "./routes/posts.js";
 import userRoutes from "./routes/user.js";
-
+import path from "path";
 const app = express();
-const path = require("path");
+// const path = require("path");
 dotenv.config();
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
