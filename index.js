@@ -19,7 +19,7 @@ app.use("/posts", postRoutes);
 app.use("/user", userRoutes);
 
 // https://ui.dev/react-router-cannot-get-url-refresh#catch-all
-app.get("/*", function (req, res) {
+app.get("*", function (req, res) {
   res.sendFile(
     path.join(__dirname, "../client/public/index.html"),
     function (err) {
